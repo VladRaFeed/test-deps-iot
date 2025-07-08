@@ -4,6 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Test DEPS IoT</title>
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jersey+15&family=Overpass:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Sansation:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=ABeeZee:ital@0;1&family=Jersey+15&family=Overpass:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Sansation:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet">
+    <!-- styles -->
     <link rel="stylesheet" href="./styles.css">
 </head>
 <body>
@@ -11,26 +19,44 @@
         <nav><a href="#">header</a></nav>
     </header>
     <main>
-        <section>
-            <h1 class="visually-hidden">Its hero section!</h1>
-            <ul>
-                <li>
-                    <p>Deps-<span>IoT</span></p>
-                </li>
-                <li>
-                    <p>We Convert</p>
-                </li>
-                <li>
-                    <p>Concepts <span>Into</span></p>
-                </li>
-                <li>
-                    <p><span>Technology</span></p>
-                </li>
-            </ul>
-            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam</p>
-            <img src="./img/hero-img.png" alt="hero-image" width="657" height="395"/>
-            <button>Explore more</button>
-            <button>Contact us</button>
+        <section class="hero-section">
+            <div>
+                <h1 class="visually-hidden">Its hero section!</h1>
+                <div class="hero-wrapper">
+                    <div class="hero-text-content">  
+                        <ul class="hero-text-list list">
+                            <li>
+                                <p class="hero-text">Deps-<span class="hero-text-wrapper">IoT</span></p>
+                            </li>
+                            <li>
+                                <p class="hero-text">We Convert</p>
+                            </li>
+                            <li>
+                                <p class="hero-text">Concepts <span class="hero-text-wrapper">Into</span></p>
+                            </li>
+                            <li>
+                                <p class="hero-text"><span class="hero-text-wrapper">Technology</span></p>
+                            </li>
+                        </ul>
+                        <p class="hero-subtitle">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam</p>
+                    </div>
+                    <div class="image-wrapper"> 
+                        <img src="./img/hero-img.png" class="hero-image" alt="hero-image" width="657" height="395"/>
+                        <div class="img-box"></div>
+                    </div>
+                </div>
+                <div class="hero-btns-wrapper">
+                    <button class="hero-btn primary">Explore more</button>
+                    <button class="hero-btn">Contact us</button>
+                </div>
+                <svg class="hero-bcg" width="622" height="726">
+                    <use href="./img/hero-bcg.svg#icon-hero-img-bcg"></use>
+                </svg>
+                
+                <svg class="hero-bcg-tablet" width="612" height="944">
+                    <use href="./img/hero-bcg-tablet.svg#icon-hero-img-bcg-tablet"></use>
+                </svg>
+            </div>
         </section>
     </main>
 </body>
