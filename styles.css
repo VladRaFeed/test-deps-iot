@@ -88,17 +88,23 @@ body {
     }
 }
 
-.hero-wrapper {
+.wrapper {
     display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.hero-wrapper {
+    height: 600px;
     align-items: center;
-    gap: 1px;
+    display: flex;
+    flex-wrap: wrap;
     padding-left: 65px;
 }
 
 @media screen and (max-width: 768px) {
     .hero-wrapper {
         padding-left: 0;
-        flex-direction: column;
         justify-content: center;
 
     }
@@ -185,11 +191,9 @@ body {
 }
 
 .hero-btns-wrapper {
-    margin-top: 52px;
     display: flex;
     align-items: center;
     gap: 40px;
-    padding-left: 65px;
 }
 
 @media screen and (max-width: 768px) {
